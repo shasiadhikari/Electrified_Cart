@@ -116,9 +116,8 @@ $figure2.1:$ System decomposition
 
 The model consists of two main subsystems: frame and motors, figure. The frame section incorporates all resistance and driving forces to produce a motion, while the motor subsystem outputs torque based on an input voltage and torque load coming from the frame subsystem. The two gear reducers are integrated into the motor system as a gain on the input and output torques, while the reduced mass moment of inertia is combined with the rotor inertia. In this chapter, both subsystems are analyzed based on their governing equations and validated using artificial inputs while monitoring the output separately for each subsystem.
 
-<img src="./Images/SystemOutlook.png">
-
-$ figure 3.1:$ eCart system outlook 
+<img src="./Images/SystemOutlook.png">\
+$figure 3.1: $ eCart system outlook 
 
 ### 3.1 eCart frame
 
@@ -129,7 +128,8 @@ The frame subsystem is transferring the motion from the motor to the ground whil
 
 $figure3.2:$ Free-body diagram of the system
 
-Governing equations $^1$:
+Governing equations $^1$ :
+
 $$
 \begin{align}
 M\ddot{x} = F_m − F_d  + W sin( β )−F_f
@@ -141,6 +141,7 @@ $$
 Fm= τ m;W=Mg ; Ff =uWcos( β ) ; F_d=A_f C_d \frac{ρ_a\dot{x}^2}{2}
 \end{align}
 $$
+
 $$
 \begin{align}
 M\ddot{x} = \frac{τ_m}{r}-A_fC_d\frac{ρ_a\dot{x}^2}{2}- Mg(sin( β ) + ucos( β ))
@@ -179,37 +180,33 @@ in the case of wind.
 $figure3.3:$ eCart frame subsystem
 
 To validate the model, first a test scenario with constant motor torque neglecting the air resistance and assuming a slope of 0 degrees was developed. The resulting equation is as follows:
+
 $$
 \begin{align}
-M\ddot{x} = \frac{τ_m}{rM}- gucos( β ))
+M\ddot{x} = \frac{τ_m}{rM}- gucos( β )
 \end{align}
 $$
 
 Taking a random constant torque _τ_ m=20 N/m , rolling resistance coefficient u = 0.01 and a mass M = 160kg the equation becomes:
 
 $$
-\begin{align}
-\ddot{x} = \frac{20N/m}{0.2m·180kg}-9.8m/s^2 · 0.01
-\end{align}
-$$
 
+\ddot{x} = \frac{20N/m}{0.2m·180kg}-9.8m/s^2 · 0.01 
 
 $$
-\begin{align}
-\ddot{x} = 0.4574m/s^2
-\end{align}
-$$
+$$\ddot{x} = 0.4574m/s^2$$
 
 Integrating both sides
+
 $$
-\begin{align}
+
 \dot{x} = 0.4574t C_1
-\end{align}
+
 $$
 
 For initial conditions $\dot{x_0},t_0 = 0 → C_1 =0.$  Therefore, the expected speed at t = 10s is:
 
-$\dot{x_1}_0 =0.4574m/s$
+$$ \dot{x_1}_0 =0.4574m/s $$
 
 Figure 3.9 shows the test system equivalent to the original subsystem without the outputs and using a constant torque.
 
