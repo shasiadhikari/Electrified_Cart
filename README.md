@@ -109,7 +109,7 @@ The resulting subsystems and their input- and output signals are presented in th
 
 <img src="./Images/SystemDecomposition.png">
 
-$ figure2.1:$ System decomposition 
+$figure2.1:$ System decomposition 
 
 
 ## 3 Analysis and validation
@@ -214,7 +214,8 @@ $\dot{x_1}_0 =0.4574m/s$
 Figure 3.9 shows the test system equivalent to the original subsystem without the outputs and using a constant torque.
 
 <img src="./Images/eCartFrameSubsystemTestSetup.png">
-FIGURE3.4: eCart frame subsystem test setup
+
+$figure3.4:$ eCart frame subsystem test setup
 
 The resulting velocity graph is presented in Figure 3.5 confirming the expected velocity.
 
@@ -226,7 +227,7 @@ The resulting velocity graph is presented in Figure 3.5 confirming the expected 
 $figure3.5:$ eCart velocity graph with neglected air resistance and
 slope of 0 degrees
 
-Tests adding a slope of 2 degrees (0.035rad) and wind resistance confirm the validity of the subsystem. As expected, adding a slope decreases the reached velocity at time t = 10s, with velocity graph shown in Figure 3..
+Tests adding a slope of 2 degrees (0.035rad) and wind resistance confirm the validity of the subsystem. As expected, adding a slope decreases the reached velocity at time t = 10s, with velocity graph shown in Figure 3.
 
 <img src="./Images/velocity_nAir_2DegSlope.png">
 
