@@ -238,6 +238,7 @@ degrees
 ### 3.2 Motors
 
 The two motors used for the project are identical and use the following governing equations:
+
 $$
 \begin{align}
 \ddot{i}=\frac{1}{l}(V - \dot{θ}_m K_b - Ri_a)
