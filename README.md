@@ -116,8 +116,7 @@ $figure2.1:$ System decomposition
 
 The model consists of two main subsystems: frame and motors, figure. The frame section incorporates all resistance and driving forces to produce a motion, while the motor subsystem outputs torque based on an input voltage and torque load coming from the frame subsystem. The two gear reducers are integrated into the motor system as a gain on the input and output torques, while the reduced mass moment of inertia is combined with the rotor inertia. In this chapter, both subsystems are analyzed based on their governing equations and validated using artificial inputs while monitoring the output separately for each subsystem.
 
-<img src="./Images/SystemOutlook.png">
-
+<img src="./Images/SystemOutlook.png">\
 $figure 3.1: $ eCart system outlook 
 
 ### 3.1 eCart frame
@@ -237,19 +236,16 @@ degrees
 ### 3.2 Motors
 
 The two motors used for the project are identical and use the following governing equations:
-
 $$
 \begin{align}
 \ddot{i}= \frac{1}{l}(V-\dot{θ}_mK_b-Ri_a)
 \end{align}
-
 $$
 
 $$
 \begin{align}
 \ddot{θ}_m= \frac{1}{J_m}(K_mi_a-B_m\dot{θ}_m - T_l)
 \end{align}
-
 $$
 
 With the following notations:
@@ -330,17 +326,17 @@ $figure3.12:$ Motor rotational velocity test case
 
 ## 4 Controller design
 
-The controller corrects the error of the model by taking the actual and required outputs of a model. The easiest approach to do so is to produce an actuating signal proportional to the error, i.e., the more the error, the higher will be the actuating signal magnitude, which results in an output that matches the required output. The above controller is called a Proportional controller^1.
+The controller corrects the error of the model by taking the actual and required outputs of a model. The easiest approach to do so is to produce an actuating signal proportional to the error, i.e., the more the error, the higher will be the actuating signal magnitude, which results in an output that matches the required output. The above controller is called a Proportional controller $^1$.
 
-If there are any inherent limitations that lead to steady-state error. The integral of that error is used to reduce the steady-state error, this is called an integral controller. This controller can also perform in noisy environments. A combination of these two controllers is a PI controller. A PI controller reduces both the rise time and the steady state errors of the system. Therefore, initially, it has been decided to use a PI controller in our system^2.
+If there are any inherent limitations that lead to steady-state error. The integral of that error is used to reduce the steady-state error, this is called an integral controller. This controller can also perform in noisy environments. A combination of these two controllers is a PI controller. A PI controller reduces both the rise time and the steady state errors of the system. Therefore, initially, it has been decided to use a PI controller in our system $^2$ .
 
-Tuning a controller is a critical process to ensure the optimal performance of the system. There are several methods to tune a controller, including the Ziegler-Nichols method, Cohen-Coon method, and the trial-and-error method^3. Here the trial-and-error method for the tuning has been utilized.
+Tuning a controller is a critical process to ensure the optimal performance of the system. There are several methods to tune a controller, including the Ziegler-Nichols method, Cohen-Coon method, and the trial-and-error method $^3$ . Here the trial-and-error method for the tuning has been utilized.
 
 Initially implementing the PI controller in the open system with a proportional gain (Kp) and Integral gain (Ki) of 1 and upper output limit of 48.
 
-(^1) (Hinton, Osindero, and Teh, 2006)
-(^2) (Orozco-Alzuru, Gómez-Ramirez, and Moreno-Cáceres, 1991)
-(^3) (LeCun et al., 1998)
+$^1$ (Hinton, Osindero, and Teh, 2006)\
+$^2$ (Orozco-Alzuru, Gómez-Ramirez, and Moreno-Cáceres, 1991)\
+$^3$ (LeCun et al., 1998)
 
 
 
