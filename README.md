@@ -119,7 +119,7 @@ The model consists of two main subsystems: frame and motors, figure. The frame s
 
 <img src="./Images/SystemOutlook.png">
 
-$figure 3.1: $ eCart system outlook 
+$figure 3.1:$ eCart system outlook 
 
 ### 3.1 eCart frame
 
@@ -240,7 +240,7 @@ degrees
 The two motors used for the project are identical and use the following governing equations:
 $$
 \begin{align}
-\ddot{i}=\frac{1}{l}(V-\dot{θ}_mK_b-Ri_a)
+\ddot{i}=\frac{1}{l}(V - \dot{θ}_m K_b - Ri_a)
 \end{align}
 $$
 
