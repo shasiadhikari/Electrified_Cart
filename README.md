@@ -116,7 +116,9 @@ $figure2.1:$ System decomposition
 
 The model consists of two main subsystems: frame and motors, figure. The frame section incorporates all resistance and driving forces to produce a motion, while the motor subsystem outputs torque based on an input voltage and torque load coming from the frame subsystem. The two gear reducers are integrated into the motor system as a gain on the input and output torques, while the reduced mass moment of inertia is combined with the rotor inertia. In this chapter, both subsystems are analyzed based on their governing equations and validated using artificial inputs while monitoring the output separately for each subsystem.
 
-<img src="./Images/SystemOutlook.png">\
+
+<img src="./Images/SystemOutlook.png">
+
 $figure 3.1: $ eCart system outlook 
 
 ### 3.1 eCart frame
@@ -238,13 +240,13 @@ degrees
 The two motors used for the project are identical and use the following governing equations:
 $$
 \begin{align}
-\ddot{i}= \frac{1}{l}(V-\dot{θ}_mK_b-Ri_a)
+\ddot{i}=\frac{1}{l}(V-\dot{θ}_mK_b-Ri_a)
 \end{align}
 $$
 
 $$
 \begin{align}
-\ddot{θ}_m= \frac{1}{J_m}(K_mi_a-B_m\dot{θ}_m - T_l)
+\ddot{θ}_m=\frac{1}{J_m}(K_mi_a-B_m\dot{θ}_m - T_l)
 \end{align}
 $$
 
@@ -349,8 +351,6 @@ $figure4.1:$ Reference velocity and output velocity of the system
 
 As can be seen, the system oscillates and overshoots, but the steady-state error is close to zero. Because it’s known that the integral gain is responsible for these. Attempts to reduce it in the following step are executed. After a few simulations, it is noticed that the steady-state error increased as Ki decreased.
 
-
-Chapter 4. Controller design 16
 
 As a result, the proportional gain is raised. The following system controller in Figure 4.2 uses this algorithm.
 
