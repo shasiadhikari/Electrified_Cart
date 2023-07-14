@@ -117,6 +117,7 @@ $figure2.1:$ System decomposition
 The model consists of two main subsystems: frame and motors, figure. The frame section incorporates all resistance and driving forces to produce a motion, while the motor subsystem outputs torque based on an input voltage and torque load coming from the frame subsystem. The two gear reducers are integrated into the motor system as a gain on the input and output torques, while the reduced mass moment of inertia is combined with the rotor inertia. In this chapter, both subsystems are analyzed based on their governing equations and validated using artificial inputs while monitoring the output separately for each subsystem.
 
 <img src="./Images/SystemOutlook.png">
+
 $figure 3.1: $ eCart system outlook 
 
 ### 3.1 eCart frame
@@ -198,7 +199,7 @@ $\dot{x} = 0.4574t C_1$
 
 For initial conditions $\dot{x_0},t_0 = 0 → C_1 =0.$  Therefore, the expected speed at t = 10s is:
 
-$ \dot{x_1}_0 =0.4574m/s $
+$\dot{x_1}_0 =0.4574m/s$
 
 Figure 3.9 shows the test system equivalent to the original subsystem without the outputs and using a constant torque.
 
